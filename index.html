@@ -1,0 +1,1005 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/bootstrap-icons.css" />
+    <link rel="stylesheet" href="css/all.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="icon" href="img/WhatsApp Image 2026-05-10 at 8.48.43 PM.jpeg">
+    <title>final project by EL-HAAG</title>
+  </head>
+  <body>
+    <main class="container-fluid">
+      <!-- start header Home-section -->
+
+      <header class="position-relative g-0">
+        <!-- start navbar Home-section -->
+        <nav
+          class="navbar navbar-expand-lg col-12 col-md-9 m-auto mt-3 rounded-3 position-absolute top-0 start-50 translate-middle-x z-3"
+        >
+          <div class="container-fluid">
+            <a class="navbar-brand text-light fw-bold" href="#">property</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarNavDropdown"
+              aria-controls="navbarNavDropdown"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse col-6" id="navbarNavDropdown">
+              <ul class="navbar-nav nav-fill ms-auto gap-4 nav-underline">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active text-light"
+                    aria-current="page"
+                    href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle text-light"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                    >properties</a
+                  >
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Action</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Another action</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="services.html"
+                    >services</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="contact-us.html"
+                    >Contact Us</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+        <!-- End navbar Home-section -->
+
+        <div
+          id="carouselExample"
+          class="carousel slide vh-100"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner h-100">
+            <div class="carousel-item active h-100" data-bs-interval="2000">
+              <img
+                src="img/hero_bg_1.jpg"
+                class="d-block w-100 object-fit-cover h-100"
+              />
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="2000">
+              <img
+                src="img/hero_bg_2.jpg"
+                class="d-block w-100 object-fit-cover h-100"
+              />
+            </div>
+            <div class="carousel-item h-100" data-bs-interval="2000">
+              <img
+                src="img/hero_bg_3.jpg"
+                class="d-block w-100 object-fit-cover h-100"
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden"> Next</span>
+          </button>
+          <div
+            class="text-center position-absolute top-50 start-50 translate-middle-x w-100 px-3 z-2 "
+          >
+            <div class="text-center">
+              <h3 class="fw-bold text-light mb-4">
+                Easiest way to find your dream home
+              </h3>
+
+              <form
+                class="d-flex flex-wrap justify-content-center flex-column flex-md-row py-2 mx-auto gap-2 align-items-center"
+                role="search"
+              >
+                <div class="col-12 col-md-7 col-lg-6">
+                  <input
+                    class="form-control rounded-5 py-3"
+                    type="search"
+                    placeholder="Your ZIP code or City. e.g. New York"
+                    aria-label="Search"
+                  />
+                </div>
+                <button
+                  class="btn rounded-5 px-4 py-2 text-light"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- end header Home-section -->
+
+      <!-- stert properties Home-section -->
+      <section class="container">
+        <div class="d-flex justify-content-between mt-5 mb-5">
+          <h2 class="pobular">popular properties</h2>
+          <button class="btn text-light btttn rounded-5">
+            view all properties
+          </button>
+        </div>
+        <div id="card-carousel" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class="">
+                    <img
+                      src="img/img_6.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-3 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-12">
+                  <div class="">
+                    <img
+                      src="img/img_1.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-3 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-12">
+                  <div class="">
+                    <img
+                      src="img/img_2.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-2 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-6 col-lg-4 col-12">
+                  <div class="">
+                    <img
+                      src="img/img_3.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-3 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-12">
+                  <div class="">
+                    <img
+                      src="img/img_4.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-3 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 col-12">
+                  <div class="">
+                    <img
+                      src="img/img_5.jpg"
+                      class="card-img-top object-fit-cover"
+                      style="height: 250px"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title fw-bold price">$1,291,000</h4>
+                      <p class="card-text my-2 california">
+                        5232 california Fake, Ave. 21BC
+                      </p>
+                      <h5 class="fw-bold my-2">Calfornia, USA</h5>
+                      <span><i class="fa-solid fa-bed"></i> 2 beds</span>
+                      <span><i class="fa-solid fa-bath"></i> 2 bath</span>
+                      <br />
+                      <a href="#" class="btn btn-success rounded-5 mt-3 btttn"
+                        >see details</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#card-carousel"
+            data-bs-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#card-carousel"
+            data-bs-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden"> Next</span>
+          </button>
+        </div>
+
+        <div class="d-flex justify-content-between prev">
+          <button class="btn rounded-5 my-5 border px-4 nextt " data-bs-target="#card-carousel " data-bs-slide="prev">prev </button>
+          <button class="btn rounded-5 my-5 border px-4 nextt " data-bs-target="#card-carousel " data-bs-slide="next">next </button>
+        </div>
+      </section>
+
+      <!-- End properties Home-section -->
+
+      
+
+      <section class="row section2 text-center">
+        <div
+          class="d-flex flex-wrap justify-content-sm-center m-auto text-center my-4 col-12 gap-4"
+        >
+          <div
+            data-aos="fade-up"
+            class="bg-light col-lg-2 col-md-4 col-10 rounded-1"
+          >
+            <p class="fs-2 mb-1 icon"><i class="fa-regular fa-house"></i></p>
+            <h6 class="mb-2">Our Properties</h6>
+            <p class="par m-auto mb-3 mt-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. lorem
+              mahmoud
+            </p>
+            <p class="d-block fs-5">
+              <a href="" class="text-decoration-none scal1">learn more</a>
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-light col-lg-2 col-md-4 col-10 pb-3 rounded-1"
+          >
+            <p class="fs-2 mb-1 icon"><i class="fa-solid fa-building"></i></p>
+            <h6 class="mb-2">Property for Sale</h6>
+            <p class="par col-10 m-auto my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium fugiat
+            </p>
+            <p class="d-block fs-5">
+              <a href="" class="text-decoration-none scal1">learn more</a>
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-light col-lg-2 col-md-4 col-10 pb-3 rounded-1"
+          >
+            <p class="fs-2 mb-1 icon">
+              <i class="fa-solid fa-house-chimney-user"></i>
+            </p>
+            <h6 class="mb2">Real State Agent</h6>
+            <p class="par col-10 m-auto my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium fugiat
+            </p>
+            <p class="d-block fs-5">
+              <a href="" class="text-decoration-none scal1">learn more</a>
+            </p>
+          </div>
+          <div
+            data-aos="fade-up"
+            class="bg-light col-lg-2 col-md-4 col-10 pb-3 rounded-1"
+          >
+            <p class="fs-2 mb-1 icon"><i class="fa-regular fa-house"></i></p>
+            <h6 class="mb-2">House for Sale</h6>
+            <p class="par col-10 m-auto my-3">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Laudantium fugiat
+            </p>
+            <p class="d-block fs-5">
+              <a href="" class="text-decoration-none scal1">learn more</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- start  Coustomer Says-section -->
+      <section class="container">
+        <div class="d-flex justify-content-between prev">
+          <h2 class="pt-5 pobular">Coustomer Says</h2>
+          <div>
+            <button class="btn rounded-5 my-5 border px-4 nextt">prev</button>
+            <button class="btn rounded-5 my-5 border px-4 nextt">next</button>
+          </div>
+        </div>
+
+        <div id="personal-carousel" class="carousel slide my-5">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_1-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">rozik shehata</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_2-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">mostafa brakat</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_3-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">abdalla samir</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_4-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">khalid harby</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_5-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">mohamed arafa</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <div class=" ">
+                    <div class="col-md-3 col-2">
+                      <img
+                        src="img/person_6-min.jpg"
+                        class="card-img-top object-fit-cover rounded-circle"
+                        alt="..."
+                      />
+                    </div>
+                    <div class="card-body">
+                      <div class="mt-3">
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                        <span class="icons"
+                          ><i class="fa-solid fa-star"></i
+                        ></span>
+                      </div>
+                      <h6 class="card-title fw-bold mb-3">hady sleam</h6>
+                      <p class="card-text my-2">
+                        "Far far away, behind the word mountains, far there live
+                        the blind texts. Separated they live in from the
+                        countries Vokalia and Consonantiaookmarksgrove right at
+                        the coast of the Semantics,
+                      </p>
+                      <p class="Co-founder">Designer, Co-founder</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#personal-carousel"
+            data-bs-slide="prev"
+          >
+            <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#personal-carousel"
+            data-bs-slide="next"
+          >
+            <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+            <span class="visually-hidden"> Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- End  Coustomer Says-section -->
+
+      <!-- START description-section  -->
+      <section class="section3 mt-5">
+        <div class="m-auto text-center col-md-4 col-12 mt-5">
+          <h3>Let's find home that's perfect for you</h3>
+          <p class="Co-founder">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem
+            consequatur nulla officia, earum quod ratione cupiditate sapiente
+            eaque placeat dicta?
+          </p>
+        </div>
+        <div
+          class="d-flex flex-wrap justify-content-evenly my-5 align-items-center"
+        >
+          <div class="pt-5">
+            <div class="d-flex align-items-center mb-4">
+              <button
+                class="btn rounded-circle text-dark fs-6 border-1 border-black users d-flex justify-content-center align-items-center p-3"
+              >
+                <i class="fa-solid fa-house"></i>
+              </button>
+              <div class="ms-3">
+                <h6 class="mb-1">2M properties</h6>
+                <p class="mb-0 Co-founder col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Unde, esse!
+                </p>
+              </div>
+            </div>
+            <div class="d-flex flex-wrap align-items-center mb-4">
+              <button
+                class="btn rounded-circle text-dark fs-6 border-1 border-black users d-flex justify-content-center align-items-center p-3"
+              >
+                <i class="fa-solid fa-user"></i>
+              </button>
+              <div class="ms-3">
+                <h6 class="mb-1">Top Rated Agent</h6>
+                <p class="mb-0 Co-founder col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Unde, esse!
+                </p>
+              </div>
+            </div>
+            <div class="d-flex align-items-center mb-4">
+              <button
+                class="btn rounded-circle text-dark fs-6 border-1 border-black users d-flex justify-content-center align-items-center p-3"
+              >
+                <i class="fa-solid fa-shield"></i>
+              </button>
+              <div class="ms-3">
+                <h6 class="mb-1">Legit Properties</h6>
+                <p class="mb-0 Co-founder col-11">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Unde, esse!
+                </p>
+              </div>
+            </div>
+          </div>
+          <figure class="position-relative col-md-5 col-12 mt-5 mt-md-0">
+            <img
+              src="img/img_1.jpg"
+              class="col-11 mt-5 dot"
+              style="height: 400px"
+            />
+            <img src="img/dots.png" class="position-absolute col-10 dots" />
+          </figure>
+        </div>
+        <div class="d-flex flex-wrap justify-content-evenly mt-5 text-center">
+          <div data-aos="fade-up" class=" col-6 col-lg-2 m-auto">
+            <h2 class="display-6 fw-bold mb-0 icon">3.985</h2>
+            <p class="Co-founder"># of buy properties</p>
+          </div>
+          <div data-aos="fade-up" class=" col-6 col-lg-2 m-auto">
+            <h2 class="display-6 fw-bold mb-0 icon">1.097</h2>
+            <p class="Co-founder"># of sell properties</p>
+          </div>
+          <div data-aos="fade-up" class=" col-6 col-lg-2 m-auto">
+            <h2 class="display-6 fw-bold mb-0 icon">7.191</h2>
+            <p class="Co-founder"># of all properties</p>
+          </div>
+          <div data-aos="fade-up" class=" col-6 col-lg-2 m-auto">
+            <h2 class="display-6 fw-bold mb-0 icon">4.154</h2>
+            <p class="Co-founder">#of agent</p>
+          </div>
+        </div>
+      </section>
+      <!--End description-section  -->
+
+      <section class="my-5 text-center">
+        <h3 class="mt-5 mb-2 icon">
+          Be a part of our growing real state agents
+        </h3>
+        <button class="btn text-light btttn rounded-5 my-3">
+          Applay for Real Estat agent
+        </button>
+      </section>
+
+      <!-- satrt Our agent-section -->
+      
+      <section class="row section3">
+        <div class="text-center mt-5">
+          <h3 class="pt-5 pobular">Our Agent</h3>
+          <p class="Co-founder col-md-6 col-12 m-auto mb-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt,
+            minima labore ea, facere pariatur ab nam maxime vitae nihil aliquid
+            iure velit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Ab,
+          </p>
+        </div>
+
+        <div class="d-flex flex-wrap justify-content-center gap-4 m-auto mb-5">
+          <div class="col-12 col-md-5 col-lg-3 text-center our-agent rounded-3">
+            <div class="col-2 m-auto pt-5">
+              <img
+                src="img/person_1-min.jpg"
+                class="card-img-top object-fit-cover rounded-circle"
+                alt="..."
+              />
+            </div>
+            <div class="card-body rounded-1">
+              <h6 class="card-title fw-bold mb-0">abdo sabbah</h6>
+              <p class="card-text mb-3 Co-founder">Real Estate Agent</p>
+              <p class="Co-founder col-8 m-auto">
+                Designer, Co-founder Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Unde, quia. Vitae soluta dolores voluptatem
+                beatae sed impedit? Pariatur, labore nemo!
+              </p>
+              <div class="mt-4 d-flex justify-content-center gap-2">
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-square-linkedin"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-5 col-lg-3 text-center our-agent">
+            <div class="col-2 m-auto pt-5">
+              <img
+              src="img/person_3-min.jpg"
+              class="card-img-top object-fit-cover rounded-circle"
+              alt="..."
+              />
+            </div>
+            <div class="card-body mb-5">
+              <h6 class="card-title fw-bold mb-0">ali elsokary</h6>
+              <p class="card-text mb-3 Co-founder">Real Estate Agent</p>
+              <p class="Co-founder col-8 m-auto">
+                Designer, Co-founder Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Unde, quia. Vitae soluta dolores voluptatem
+                beatae sed impedit? Pariatur, labore nemo!
+              </p>
+              <div class="mt-4 d-flex justify-content-center gap-2">
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </p>
+                <p
+                class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-square-linkedin"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-3 text-center our-agent">
+            <div class="col-2 m-auto pt-5">
+              <img
+                src="img/person_2-min.jpg"
+                class="card-img-top object-fit-cover rounded-circle"
+                alt="..."
+                />
+              </div>
+            <div class="card-body">
+              <h6 class="card-title fw-bold mb-0">khalid sabbah</h6>
+              <p class="card-text mb-3 Co-founder">Real Estate Agent</p>
+              <p class="Co-founder col-8 m-auto">
+                Designer, Co-founder Lorem, ipsum dolor sit amet consectetur
+                adipisicing elit. Unde, quia. Vitae soluta dolores voluptatem
+                beatae sed impedit? Pariatur, labore nemo!
+              </p>
+              <div class="mt-4 d-flex justify-content-center gap-2">
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-twitter"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-facebook"></i>
+                </p>
+                <p
+                class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-square-linkedin"></i>
+                </p>
+                <p
+                  class="rounded-circle p-2 d-flex justify-content-center align-items-center twitter"
+                >
+                  <i class="fa-brands fa-instagram"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- satrt Our agent-section -->
+
+      <!-- start footer Home-section -->
+
+      <footer class="container-fluid pt-5">
+        <div class="row pb-5 text-center">
+          <div class="col-md-4 col-lg-3 col-10 m-auto m-lg-0 text-cente">
+            <p class="fs-5 fw-bold pobular">contact</p>
+            <p><a class="footer-link" href="">+1(123)-456-7890</a></p>
+            <p><a class="footer-link" href="">+1(123)-456-7890</a></p>
+            <p><a class="footer-link" href="">info@mydomain.com</a></p>
+          </div>
+          <div class="col-md-5 col-lg-3 col-10 m-auto">
+            <p class="fs-5 fw-bold pobular">source</p>
+            <p><a class="footer-link" href="about.html">About Us</a></p>
+            <p><a class="footer-link" href="services.html">services</a></p>
+            <p><a class="footer-link" href="">vision</a></p>
+            <p><a class="footer-link" href="">misson</a></p>
+            <p><a class="footer-link" href="">terms</a></p>
+            <p><a class="footer-link" href="">privace</a></p>
+          </div>
+          <div class="col-md-5 col-lg-3 col-10 m-auto">
+            <p></p>
+            <p class="pt-4"><a class="footer-link" href="">partners</a></p>
+            <p><a class="footer-link" href="">business</a></p>
+            <p><a class="footer-link" href="">careers</a></p>
+            <p><a class="footer-link" href=""> Blog</a></p>
+            <p><a class="footer-link" href="">FAQ</a></p>
+            <p><a class="footer-link" href="">creative</a></p>
+          </div>
+          <div class="col-md-5 col-lg-3 col-10 m-auto text-center">
+            <p class="fs-5 fw-bold pobular">links</p>
+            <p><a class="footer-link" href="">Our vision</a></p>
+            <p><a class="footer-link" href="about.html">About Us</a></p>
+            <p><a class="footer-link" href="">contact us</a></p>
+            <div class="d-flex m-auto text-center mb-5 justify-content-center">
+              <p
+                class="footer-brand rounded-4 ms-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-instagram"></i>
+              </p>
+              <p
+                class="footer-brand rounded-4 ms-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-twitter"></i>
+              </p>
+              <p
+                class="footer-brand rounded-4 ms-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </p>
+              <p
+                class="footer-brand rounded-4 ms-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-square-linkedin"></i>
+              </p>
+              <p
+                class="footer-brand rounded-4 ms-2 d-flex justify-content-center align-items-center"
+              >
+                <i class="fa-brands fa-whatsapp"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="text-center m-auto py-5 col-5">
+          <p class="Co-founder">
+            Copyright @ 2026 . All Rights Reserved. -- Designed with love by
+            <a class="Co-founder footer-link" href="">mahmoud sabbash</a>
+            Distributed by
+            <a class="Co-founder footer-link" href="">El-HAAG</a>
+          </p>
+        </div>
+      </footer>
+      <!--  End footer home-section -->
+    </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="js/bootstrap.bundle.js"></script>
+  </body>
+</html>
