@@ -164,3 +164,344 @@ translate {
 .nav-about {
   z-index: 3 !important;
 }
+
+/*  */
+
+/*  */
+
+nav {
+  background-color: #005555;
+}
+
+form button {
+  background-color: #005555 !important;
+}
+
+.california {
+  font-size: 14px !important;
+  color: #898888;
+}
+
+.card-body a {
+  background-color: #005555;
+}
+
+.card-body span {
+  font-size: 14px !important;
+  color: #a7a7a7;
+}
+
+.btttn {
+  background-color: #005555;
+  transition: 0.5s;
+}
+
+.btttn:hover {
+  background-color: #001841;
+  transform: translateY(-10px);
+}
+
+.nextt {
+  color: black;
+  transition: 0.5s;
+}
+
+.nextt:hover {
+  color: white;
+  background-color: #001841;
+  transform: translateY(-10px);
+}
+
+.pobular {
+  color: #001841;
+}
+
+.price {
+  color: #005555;
+  position: relative;
+  width: fit-content;
+}
+
+.price::before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #005555;
+  bottom: -2px;
+  position: absolute;
+}
+
+.prev button {
+  background-color: #e5e8ed;
+}
+
+.par {
+  font-size: 14px !important;
+  color: #898888;
+}
+
+h6 {
+  color: #1a3965;
+}
+
+.icon {
+  color: #122643;
+}
+
+.section2 {
+  background-color: #f2f4f6;
+}
+
+.icons {
+  color: gold !important;
+}
+
+.Co-founder {
+  font-size: 14px !important;
+  color: #898888;
+}
+
+.users {
+  background-color: #efefef;
+  width: 65px;
+  height: 65px;
+  transition: 0.5s;
+}
+
+.users:hover {
+  border-width: 1.5px !important;
+  border-style: solid;
+  border-color: blue;
+  transform: translateY(-10px);
+}
+
+.scal1 {
+  color: #15396f !important;
+  position: relative;
+}
+
+.scal1:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #122643;
+  bottom: -1px;
+  position: absolute;
+  transition: 0.5s;
+  transform: scale(0);
+}
+
+.scal1:hover:before {
+  transform: scale(1);
+}
+
+.section3 {
+  background-color: #f8f9fa;
+}
+
+.twitter {
+  width: 40px;
+  height: 40px;
+  background-color: #122643;
+  color: white;
+  transition: 0.5s;
+  font-size: 14px !important;
+}
+
+.twitter:hover {
+  color: #122643;
+  background-color: white;
+  transform: translateY(-10px);
+  border-width: 1px !important;
+  border-style: solid;
+  border-color: rgb(18, 18, 194);
+}
+
+.our-agent {
+  background-color: white;
+}
+
+footer {
+  background-color: #efefef;
+}
+
+.footer-link {
+  color: #9b9999;
+}
+
+.footer-link:hover {
+  color: rgb(9, 9, 9);
+}
+
+.footer-brand {
+  width: 40px;
+  height: 40px;
+  background-color: #c7c7c7;
+  color: rgb(122, 122, 122);
+  transition: 0.5s;
+  font-size: 14px !important;
+}
+
+.footer-brand:hover {
+  background-color: #122643;
+  color: white;
+  transform: translateY(-10px);
+  border-width: 1px !important;
+  border-style: solid;
+  border-color: rgb(18, 18, 194);
+}
+
+.dots {
+  position: absolute;
+  left: 100px;
+  top: 250px;
+  z-index: -1;
+}
+
+.dot {
+  z-index: 3;
+}
+
+translate {
+  z-index: 2 !important;
+}
+
+.nav-about {
+  z-index: 3 !important;
+}
+
+/* ===== Small layout fixes; Bootstrap does the responsive grid ===== */
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.navbar {
+  max-width: calc(100% - 24px);
+}
+
+.carousel-item img {
+  display: block;
+}
+
+/* Keep the hero search inside the viewport */
+header form {
+  max-width: 900px;
+}
+
+/* Prevent long text from creating horizontal overflow */
+.card-body,
+.our-agent,
+footer,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* Bootstrap breakpoint: tablet/mobile */
+@media (max-width: 991.98px) {
+  .navbar .navbar-collapse {
+    margin-top: 8px;
+    padding: 8px;
+    border-radius: 6px;
+    background-color: #005555;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  .navbar-nav .nav-link {
+    padding: 8px;
+  }
+
+  .dots {
+    left: 5%;
+    top: 30%;
+    max-width: 90%;
+  }
+}
+
+/* Bootstrap breakpoint: phones */
+@media (max-width: 767.98px) {
+  .navbar {
+    width: calc(100% - 20px);
+    max-width: none;
+  }
+
+  header .carousel-item img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  header .position-absolute.top-50 {
+    width: 100% !important;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  header form {
+    width: 100%;
+  }
+
+  header form > div {
+    width: 100%;
+  }
+
+  .prev {
+    align-items: center;
+  }
+
+  .our-agent {
+    width: 100%;
+  }
+
+  footer .footer-brand {
+    flex-shrink: 0;
+  }
+}
+
+/* Very small phones */
+@media (max-width: 575.98px) {
+  header .position-absolute.top-50 {
+    top: 56% !important;
+  }
+
+  header h3 {
+    font-size: 1.35rem;
+    line-height: 1.4;
+  }
+
+  .pobular {
+    font-size: 1.5rem;
+  }
+
+  #card-carousel img {
+    height: 230px;
+    object-fit: cover;
+  }
+
+  .section2 > div {
+    gap: 16px !important;
+  }
+
+  .section2 > div > div {
+    width: 92% !important;
+  }
+
+  .twitter,
+  .footer-brand {
+    flex: 0 0 40px;
+  }
+}
